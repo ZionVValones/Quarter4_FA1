@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fdfdfd;
+}
+
+header {
+    text-align: center;
+    background-color: #d71920;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #d71920;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #d71920;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+input[type="text"], input[type="email"], button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-option input[type="radio"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+.radio-option label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    font-weight: normal;
+}
+
+button {
+    background-color: #d71920;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #b7181c;
+}
+

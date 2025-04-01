@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Sign-Up</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <img src="save-the-children-logo.png" alt="Save the Children Logo" class="logo">
+        <h1>Donate to Save the Children!</h1>
+    </header>
+    <section>
+        <p>
+            Save the Children is dedicated to improving the lives of children worldwide. 
+            <ol>
+                <li>The organization provides essential healthcare, education, and nutrition to underprivileged children.</li>
+                <li>They respond to emergencies and disasters, ensuring children receive the protection they need.</li>
+                <li>They are giving children a brighter future.</li>
+            </ol>
+        </p>
+    </section>
+    <form id="charityForm">
+        <label for="firstName">First Name (Required):</label>
+        <input type="text" id="firstName" name="firstName" required>
+        
+        <label for="lastName">Last Name (Required):</label>
+        <input type="text" id="lastName" name="lastName" required>
+        
+        <label for="sex">Sex (Required):</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="sex" value="Female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="preferNot" name="sex" value="Prefer Not to Say" required>
+        <label for="preferNot">Prefer not to say</label><br>
+        
+        <label for="email">Email (Required):</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="contact">Contact Number (Optional):</label>
+        <input type="text" id="contact" name="contact">
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>
+        document.getElementById("charityForm").addEventListener("submit", function(event) {
+            let requiredFields = document.querySelectorAll("[required]");
+            for (let field of requiredFields) {
+                if (!field.value) {
+                    alert("Please fill in all required fields.");
+                    event.preventDefault();
+                    return;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
